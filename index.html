@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style> 
+    body {
+      font-family: sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+    }
+    
+    section {
+      margin-top: 30px;
+    }
+    
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      margin: 10px 0;
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Hello! I'm [Your Name], a developer passionate about open-source and web development.</p>
+  </header>
+
+  <section id="github-stats">
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical" alt="GitHub Stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=your-github-username&theme=radical" alt="GitHub Streak">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical" alt="Top Languages">
+  </section>
+
+  <section id="repos">
+    <h2>Recent Repositories</h2>
+    <ul id="repo-list">Loading...</ul>
+  </section>
+  <script>
+    const username = "aaa2005";
+    const repoList = document.getElementById("repo-list");
+    
+    fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=5`)
+      .then(response => response.json())
+      .then(data => {
+        repoList.innerHTML = "";
+        data.forEach(repo => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong><a href="${repo.html_url}" target="_blank">${repo.name}</a></strong>: ${repo.description || "No description"}`;
+          repoList.appendChild(li);
+        });
+      })
+      .catch(err => {
+        repoList.innerHTML = "Error loading repositories.";
+        console.error(err);
+      });
+
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
