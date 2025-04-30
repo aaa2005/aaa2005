@@ -1,6 +1,6 @@
-# 👨‍💻 aaa2005 - Developer Portfolio
+# 👨‍💻 aaa2005 - Developer 
 
-Welcome to my personal portfolio repository! This is a single-file HTML portfolio that shows who I am and what I do.
+Welcome to my personal portfolio repository!
 
 ## 🚀 About Me
 I'm a multi-skilled developer passionate about:
