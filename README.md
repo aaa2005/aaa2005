@@ -1,22 +1,29 @@
-## Hi there 👋
-<div align="center">
-    <h2>GitHub Stats</h2>
-    <img src="https://github-readme-stats.vercel.app/api?username=aaa2005&amp;show_icons=true&amp;theme=radical" alt="GitHub Stats">
-    <!--<img src="https://github-readme-streak-stats.herokuapp.com?user=aaa2005&amp;theme=radical" alt="GitHub Streak">-->
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aaa2005&amp;layout=compact&amp;theme=radical" alt="Top Languages">
-</div>
-<!--
-**aaa2005/aaa2005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 👨‍💻 aaa2005 - Developer Portfolio
+
+Welcome to my personal portfolio repository! This is a single-file HTML portfolio that shows who I am and what I do.
+
+## 🚀 About Me
+I'm a multi-skilled developer passionate about:
+- 🧠 AI Development
+- 💻 Software Engineering
+- 🌐 Web Development
+- 🎮 Game Development
+- 🔌 Electronics & Solo Projects
+
+## 🧰 Technologies & Languages
+- Python
+- C / C++
+- HTML / CSS / TailwindCSS
+- JavaScript
+- Lua
+- MATLAB
+
+## 📊 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aaa2005&show_icons=true&theme=radical)
+![Streak](https://github-readme-streak-stats.herokuapp.com?user=aaa2005&theme=radical)
+
+## 📬 Contact Me
+- Email: [youremail@example.com](mailto:aaa2005games@example.com)
+- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/abderrahim-abid-bb2273248)
 
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
