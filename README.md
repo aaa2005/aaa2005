@@ -20,7 +20,7 @@ I'm a multi-skilled developer passionate about:
 
 ## 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aaa2005&show_icons=true&theme=radical)
-![Streak](https://github-readme-streak-stats.herokuapp.com?user=aaa2005&theme=radical])
+![Streak](https://github-readme-stats.vercel.app/api?username=aaa2005&show_icons=true&theme=radical)
 
 ## 📬 Contact Me
 - Email: [aaa2005games@example.com](mailto:aaa2005games@example.com)
