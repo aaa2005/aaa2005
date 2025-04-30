@@ -1,7 +1,9 @@
 ## Hi there 👋
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aaa2005&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=aaa2005&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true&order=2" height="150" alt="languages graph"  />
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=aaa2005&amp;show_icons=true&amp;theme=radical" alt="GitHub Stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=aaa2005&amp;theme=radical" alt="GitHub Streak">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aaa2005&amp;layout=compact&amp;theme=radical" alt="Top Languages">
 </div>
 <!--
 **aaa2005/aaa2005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
