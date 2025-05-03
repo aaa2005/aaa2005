@@ -1,7 +1,7 @@
 # 👨‍💻 aaa2005 - Developer 
 
 Welcome to my personal portfolio repository!
-[![committers.top badge](https://user-badge.committers.top/worldwide/aaa2005.svg)](https://user-badge.committers.top/worldwide/aaa2005)
+
 
 
 ## 🚀 About Me
