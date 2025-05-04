@@ -25,7 +25,7 @@ I'm a multi-skilled developer passionate about:
 ![Most Used Languags](https://github-readme-stats.vercel.app/api/top-langs/?username=aaa2005&layout=compact&theme=radical)
 
 ## 📬 Contact Me
-- Email: [aaa2005games@example.com](mailto:aaa2005games@example.com)
+- Email: [aaa2005games@gmail.com](mailto:aaa2005games@gmail.com)
 - LinkedIn: [Abid Abderrahim](https://linkedin.com/in/abderrahim-abid-bb2273248)
 
 
