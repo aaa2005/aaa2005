@@ -1,1 +1,170 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>aaa2005 | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 20px;
+    }
+    header, section { text-align: center; margin-bottom: 40px; }
+    h1 { font-size: 3em; margin-bottom: 0.2em; color: #58a6ff; }
+    h2 {
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+    p { max-width: 700px; margin: 0 auto 20px; }
+    img { max-width: 100%; margin: 10px auto; display: block; border-radius: 8px; }
+    ul { list-style: none; padding: 0; max-width: 800px; margin: auto; }
+    li {
+      background: #161b22;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: left;
+      transition: background 0.3s;
+    }
+    li:hover { background: #1f2937; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badges { display: flex; justify-content: center}
+    .badges img { height: 28px; margin: 5px; }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #58a6ff;
+      font-size: 1.5em;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover { transform: scale(1.2); }
+    .lang-grid, .interests-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .lang-grid span, .interests-grid span {
+      background: #21262d;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #c9d1d9;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #8b949e;
+      margin-top: 50px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>aaa2005</h1>
+    <p>Hello! I'm a passionate developer who loves working on solo and team projects involving software, AI, web, games, and electronics.</p>
+    <div class="badges">
+      <img src="https://img.shields.io/github/followers/aaa2005?label=Followers&style=flat&color=blue" alt="Followers">
+      <img src="https://img.shields.io/github/stars/aaa2005?label=Stars&style=flat&color=yellow" alt="Stars">
+      
+      <img src="https://img.shields.io/github/last-commit/aaa2005/aaa2005?label=Last%20Commit&color=green" alt="Last commit">
+      <img src="https://img.shields.io/github/commit-activity/m/aaa2005/aaa2005?label=Monthly%20Commits&color=purple" alt="Commit Activity">
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/aaa2005" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Interests</h2>
+    <div class="interests-grid">
+      <span>Software Dev</span>
+      <span>Web Dev</span>
+      <span>AI Dev</span>
+      <span>Game Dev</span>
+      <span>Solo Projects</span>
+      <span>Electronics</span>
+      <span>...and more</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Languages & Tools</h2>
+    <div class="lang-grid">
+      <span>Python</span>
+      <span>C/C++</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>TailwindCSS</span>
+      <span>JavaScript</span>
+      <span>Lua</span>
+      <span>MATLAB</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=aaa2005&show_icons=true&theme=radical" alt="GitHub Stats">
+    
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aaa2005&layout=compact&theme=radical" alt="Top Languages">
+  </section>
+
+  <section>
+    <h2>Latest Repositories</h2>
+    <ul id="repos">Loading your projects...</ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:aaa2005games@gmail.com">aaa2005games@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://linkedin.com/in/abderrahim-abid-bb2273248" target="_blank">Abid Abderrahim</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/aaa2005" target="_blank">github.com/aaa2005</a></p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> aaa2005. All rights reserved.
+  </footer>
+
+  <script>
+    const username = "aaa2005";
+    const repoList = document.getElementById("repos");
+    const yearSpan = document.getElementById("year");
+    yearSpan.textContent = new Date().getFullYear();
+
+    fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`)
+      .then(res => res.json())
+      .then(repos => {
+        repoList.innerHTML = "";
+        repos.forEach(repo => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <strong><a href="${repo.html_url}" target="_blank">${repo.name}</a></strong>
+            <p>${repo.description || "No description provided."}</p>
+            <p>⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</p>
+          `;
+          repoList.appendChild(li);
+        });
+      })
+      .catch(err => {
+        repoList.innerHTML = "<li>Failed to load repositories.</li>";
+        console.error(err);
+      });
+  </script>
+
+</body>
+</html>
